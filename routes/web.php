@@ -23,9 +23,7 @@ Route::get('/customer' , function(){
 }); 
 */
 
-
-Route::get('/Sandesh_new' , [loginControll::class, 'index']);  
-Route::get('/Sandesh' , [loginControll::class, 'index']); 
+  
 Route::get('/' , [loginControll::class, 'index']); 
 Route::get('/customer' ,[RegisterController::class,'index']);  
 Route::post('/customer' ,[CustomerRegistration::class,'add']);
