@@ -22,6 +22,10 @@ Route::get('/customer' , function(){
     print_r($customer->toArray());
 }); 
 */
+
+
+ 
+Route::get('/Sandesh' , [loginControll::class, 'index']); 
 Route::get('/' , [loginControll::class, 'index']); 
 Route::get('/customer' ,[RegisterController::class,'index']);  
 Route::post('/customer' ,[CustomerRegistration::class,'add']);
